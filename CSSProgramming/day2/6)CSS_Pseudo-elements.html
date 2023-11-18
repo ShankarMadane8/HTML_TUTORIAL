@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Pseudo-elements Example</title>
+    <style>
+        /* Creating the drop cap effect using the ::first-letter pseudo-element */
+        p::first-letter {
+            font-size: 2em;
+            font-weight: bold;
+            color: red;
+            float: left;
+            margin-right: 5px;
+            line-height: 1;
+        }
+
+        /* Styling the first line of a text differently using the ::first-line pseudo-element */
+        .first-line-styled::first-line {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* Inserting content before and/or after an element using the ::before and/or ::after pseudo-element */
+        .box::before {
+            content: "Before ";
+            font-weight: bold;
+        }
+
+        .box::after {
+            content: " After";
+            font-weight: bold;
+        }
+
+        /* Using pseudo-elements with classes */
+        .special::before {
+            content: "★ ";
+            font-size: 1.5em;
+            color:yellow;
+        }
+
+        .special::after {
+            content: " ★";
+            font-size: 1.5em;
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Creating the drop cap effect using the ::first-letter pseudo-element -->
+    <p>
+        <span class="special">T</span>his is an example of creating a drop cap effect using the ::first-letter pseudo-element.
+    </p>
+
+    <!-- Styling the first line of a text differently using the ::first-line pseudo-element -->
+    <p class="first-line-styled">
+        This is an example of styling the first line of a text differently using the ::first-line pseudo-element.
+    </p>
+
+    <!-- Inserting content before and/or after an element using the ::before and/or ::after pseudo-element -->
+    <div class="box">This is a box element.</div>
+
+    <!-- Using pseudo-elements with classes -->
+    <p class="special">This is an example of using pseudo-elements with classes.</p>
+</body>
+</html>

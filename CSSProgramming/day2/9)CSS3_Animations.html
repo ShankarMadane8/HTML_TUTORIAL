@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Animation Example</title>
+    <style>
+        /* Defining keyframe while creating animations */
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* Animating elements on a web page */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation: slideInFromLeft 2s ease-out;
+        }
+
+
+
+           /* Second Div Define the keyframes for the animation */
+           @keyframes moveRight {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(200px); }
+        }
+
+        /* Apply the animation to the element */
+        .animated-element {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            animation: moveRight 2s ease infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animated Element</h1>
+    <div class="box"></div>
+
+    <h1>Element Animation Example</h1>
+    <div class="animated-element"></div>
+</body>
+</html>

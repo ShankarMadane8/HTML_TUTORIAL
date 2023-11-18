@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Border and Outlines Example</title>
+    <style>
+        /* Draw border around element */
+        .element-with-border {
+            border: 2px solid blue;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Draw border on the individual sides of an element */
+        .sides-border {
+            border-top: 2px dashed red;
+            border-right: 2px dotted green;
+            border-bottom: 2px double blue;
+            border-left: 2px solid purple;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Setting different styles for the borders */
+        .different-border-styles {
+            border: 3px solid #f00;
+            border-top-style: dotted;
+            border-right-style: dashed;
+            border-bottom-style: double;
+            border-left-style: solid;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Setting the all border properties at once - The border shorthand property */
+        .border-shorthand {
+            border: 4px solid purple;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Creating rounded corners around an element */
+        .rounded-corners {
+            border: 2px solid #000;
+            border-radius: 20px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Using images for creating borders */
+        .border-with-image {
+            border: 10px solid transparent;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-image: url('border-image.png');
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="element-with-border">
+        This element has a border around it.
+    </div>
+
+    <div class="sides-border">
+        This element has different border styles on each side.
+    </div>
+
+    <div class="different-border-styles">
+        This element has different border styles using individual properties.
+    </div>
+
+    <div class="border-shorthand">
+        This element uses the border shorthand property to set all border properties at once.
+    </div>
+
+    <div class="rounded-corners">
+        This element has rounded corners.
+    </div>
+
+    <div class="border-with-image">
+        This element uses an image to create the border.
+    </div>
+</body>
+</html>

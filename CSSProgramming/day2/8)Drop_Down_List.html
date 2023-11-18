@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Drop-down List Example</title>
+</head>
+<body>
+    <h1>Explore Links:</h1>
+
+    
+    <label for="link-dropdown">Choose a link:</label>
+    <select id="link-dropdown" onchange="navigateToLink()">
+        <option value="" disabled selected>Select a link</option>
+        <option value="https://www.example.com">Example Website</option>
+        <option value="https://www.google.com">Google</option>
+        <option value="https://www.youtube.com">YouTube</option>
+        <option value="https://www.github.com">GitHub</option>
+    </select>
+
+
+    <script>
+        // JavaScript function to navigate to the selected link
+        function navigateToLink() {
+            const linkDropdown = document.getElementById('link-dropdown');
+            const selectedLink = linkDropdown.value;
+            if (selectedLink !== '') {
+                window.location.href = selectedLink;
+            }
+        }
+    </script>
+</body>
+</html>

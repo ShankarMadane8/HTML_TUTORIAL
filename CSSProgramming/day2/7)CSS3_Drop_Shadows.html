@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Drop Shadows Example</title>
+    <style>
+        /* Creating box shadow effect */
+        .box-shadow-example {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+        }
+
+        /* Adding multiple box shadows to an element's box */
+        .multiple-box-shadows {
+            width: 200px;
+            height: 100px;
+            background-color: lightgreen;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+                        -5px -5px 10px rgba(255, 0, 0, 0.5);
+            margin: 20px;
+        }
+
+        /* Creating text shadow effect */
+        .text-shadow-example {
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Creating box shadow effect -->
+    <div class="box-shadow-example">Box Shadow</div>
+
+    <!-- Adding multiple box shadows to an element's box -->
+    <div class="multiple-box-shadows">Multiple Box Shadows</div>
+
+    <!-- Creating text shadow effect -->
+    <p class="text-shadow-example">Text Shadow</p>
+</body>
+</html>

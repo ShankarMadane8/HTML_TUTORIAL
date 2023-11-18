@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Margin and Padding Example</title>
+    <style>
+        /* Sets the margins for individual sides of an element */
+        .margins {
+            margin-top: 20px;
+            margin-right: 40px;
+            margin-bottom: 60px;
+            margin-left: 80px;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        /* Setting all margin properties in a single declaration - The margin shorthand property */
+        .margin-shorthand {
+            margin: 10px 20px 30px 40px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* Sets the paddings for individual sides of an element */
+        .paddings {
+            padding-top: 20px;
+            padding-right: 40px;
+            padding-bottom: 60px;
+            padding-left: 80px;
+            background-color: pink;
+            margin: 10px;
+        }
+
+        /* Setting all padding properties at once - The padding shorthand property */
+        .padding-shorthand {
+            padding: 10px 20px 30px 40px;
+            background-color: rgb(204, 204, 23);
+            margin: 10px;
+        }
+
+        /* Apply both margin and padding to an element */
+        .margin-padding {
+            margin: 20px;
+            padding: 30px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sets the margins for individual sides of an element -->
+    <div class="margins">
+        This element has different margins on each side.
+    </div>
+
+    <!-- Setting all margin properties in a single declaration - The margin shorthand property -->
+    <div class="margin-shorthand">
+        This element uses the margin shorthand property to set all margins at once.
+    </div>
+
+    <!-- Sets the paddings for individual sides of an element -->
+    <div class="paddings">
+        This element has different paddings on each side.
+    </div>
+
+    <!-- Setting all padding properties at once - The padding shorthand property -->
+    <div class="padding-shorthand">
+        This element uses the padding shorthand property to set all paddings at once.
+    </div>
+
+    <!-- Apply both margin and padding to an element -->
+    <div class="margin-padding">
+        This element has both margin and padding applied.
+    </div>
+</body>
+</html>

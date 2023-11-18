@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Display Example</title>
+    <style>
+        /* Hide an element using the visibility property */
+        .hidden-element {
+            visibility: hidden;
+        }
+
+        /* Display an element as an inline element */
+        .inline-element {
+           
+            background-color: lightblue;
+            padding: 5px;
+        }
+
+        /* Display an element as a block element */
+        .block-element {
+            display: block;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hidden Element -->
+    <div class="hidden-element">
+        This is a hidden element. It is not visible but still occupies space.
+    </div>
+
+    <!-- Inline Element -->
+    <div class="inline-element">
+        This is an inline element. It will not create line breaks and will be inline with other inline elements.
+
+        <span>this is Not Inline Element </span>
+    </div>
+
+    <br>
+    <!-- Block Element -->
+    <div class="block-element">
+        This is a block element. It will create a new line and take up the full width available.
+        <p>this is Not Inline Element </p>
+    </div>
+    
+</body>
+</html>

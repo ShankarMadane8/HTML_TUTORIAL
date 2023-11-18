@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Pseudo-classes Example</title>
+    <style>
+        /* Setting styles for different states of hyperlinks */
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(9, 0, 128);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+            text-decoration: underline;
+        }
+
+        /* Setting styles for form elements in focus using the :focus pseudo-class */
+   
+       input:focus {
+            border: 2px solid rgb(68, 255, 0);
+            outline: none; /* This removes the default focus outline (optional) */
+        }
+
+        
+        
+
+        /* Setting the styles for first child of an element using the :first-child pseudo-class */
+        ul li:first-child {
+            font-weight: bold;
+        }
+
+        /* Setting styles for last child of an element using the :last-child pseudo-class */
+        ul li:last-child {
+            color: red;
+        }
+
+        /* Setting styles for nth-child of an element using the :nth-child pseudo-class */
+        ul li:nth-child(2n) {
+            background-color: lightblue;
+        }
+
+        /* Setting styles for specific language using the :lang() pseudo-class */
+        p:lang(fr) {
+            font-style: italic;
+        }
+
+        /* Using pseudo-classes with selectors */
+        /* For example, applying styles to links within a specific class */
+        .special-links a:hover {
+            color: orange;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Setting styles for different states of hyperlinks -->
+    <p>
+        <a href="#">Link</a>
+        <a href="#" style="margin-left: 20px;">Visited Link</a>
+        <a href="#" style="margin-left: 20px;">Hover Over Me</a>
+        <a href="#" style="margin-left: 20px;">Click Me</a>
+    </p>
+
+    <!-- Setting styles for form elements in focus using the :focus pseudo-class -->
+    <form>
+        <label for="inputField">Input:</label>
+        <input type="text" id="inputField">
+    </form>
+
+    <!-- Setting the styles for first child of an element using the :first-child pseudo-class -->
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+
+    <!-- Setting styles for last child of an element using the :last-child pseudo-class -->
+    <ul>
+        <li>First Item</li>
+        <li>Middle Item</li>
+        <li>Last Item</li>
+    </ul>
+
+    <!-- Setting styles for nth-child of an element using the :nth-child pseudo-class -->
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+    </ul>
+
+    <!-- Setting styles for specific language using the :lang() pseudo-class -->
+    <p lang="fr">Je suis un paragraphe en français.</p>
+    <p lang="en">I am a paragraph in English.</p>
+
+    <!-- Using pseudo-classes with selectors -->
+    <div class="special-links">
+        <a href="#">Special Link 1</a>
+        <a href="#">Special Link 2</a>
+    </div>
+</body>
+</html>
