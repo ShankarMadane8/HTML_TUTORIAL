@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-   
-    body, html {
-        height: 100%;
-        margin: 0; 
-        background-image:url(https://www.shutterstock.com/image-vector/map-planet-world-global-social-260nw-1364290838.jpg) ; background-repeat: no-repeat; background-size: cover;
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      background-image: url(https://www.shutterstock.com/image-vector/map-planet-world-global-social-260nw-1364290838.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
-   
-   
-</style>
-</head>
-<body>
-    
+    h1 {
+      color: red;
+    }
 
-  <div style="display: flex;  height: 100%;">
-    <div style="margin: auto auto; color: red;" >
+    /* Make the image responsive */
+    body,
+    html {
+      background-size: 100% 100%;
+    }
+
+    /* Media Query for Mobile Devices */
+    @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div style="display: flex; height: 100%;">
+    <div style="margin: auto auto;">
       <h1>Welcome To Learn HTML Tutorial</h1>
     </div>
   </div>
 
 </body>
+
 </html>
+
